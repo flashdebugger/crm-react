@@ -20,6 +20,8 @@ The goal of this starter project is to create reusable project for real-world bu
 
 ### Live Demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b15e03e-7ad7-4633-8cf1-e8a7fc6f6a88/deploy-status)](https://app.netlify.com/sites/crm-react/deploys)
+
 [Demo](https://crm-react.netlify.app/) The demo is just a proof of concept. It doesn't have back-end API and all features of master branch.
 
 ### Screenshots
