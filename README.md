@@ -20,7 +20,7 @@ The goal of this starter project is to create reusable project for real-world bu
 
 ### Live Demo
 
-[Demo](https://react-app-demo.harryho.org) The demo is just a proof of concept. It doesn't have back-end API and all features of master branch.
+[Demo](https://crm-react.netlify.app/) The demo is just a proof of concept. It doesn't have back-end API and all features of master branch.
 
 ### Screenshots
 
@@ -32,43 +32,13 @@ The goal of this starter project is to create reusable project for real-world bu
 
 <!-- ![Screenshot4](screenshots/screenshot-4.jpg) -->
 
-----
+---
 
 Storybook
-  
+
 ![Screenshot4](screenshots/screenshot-6.jpg)
 
-
-## Build Setup
-
-```bash
-# Clone project
-git clone https://github.com/harryho/react-crm.git
-
-
-# install the packages with npm
-cd react-crm
-npm install
-
-# start the server with hot reload at localhost:4000
-npm start
-# or yarn
-yarn start
-
-# Storybook
-## Start storybook
-npm run storybook
-## Build storybook
-npm run build-storybook
-
-## build for production
-npm run build
-
-```
-
-
-
-## Docker 
+## Docker
 
 ```bash
 ## Run / Test release without building new image
@@ -78,7 +48,6 @@ npm run build
 docker pull nginx:alpine
 docker run -p 8080:80 -v \
     <your_aboslute_path>/dist:/usr/share/nginx/html nginx:alpine
-
 
 # Build release image
 docker build . -t  rc-prd:2.0
@@ -98,25 +67,16 @@ For detailed explanation on how things work, checkout following links please.
 - [Redux](http://redux.js.org/)
 - [Material-UI](http://www.material-ui.com/)
 
-### Alternatives
-
-There are another two similar projects respectively built on the Vue.js and Angular. If you have interests in those technical stacks. You can find and clone those repositories below.
-
-- [Ng-MD-App](https://github.com/harryho/ng-md-app.git).
-- [Ng4Crm](https://github.com/harryho/ng4crm.git). (It is no longer maintained with latest Angular)
-- [Vue-Crm](https://github.com/harryho/vue-crm.git).
-
 ### Change log
 
-- May 2020 -  Merge the branch rctsx to master
+- May 2020 - Merge the branch rctsx to master
 
   After the merge, the whole project moved to new techncial stack - TypeScript 3. Also, the Material-UI is upgraded to 4.x version.
-
 
 - Dec 2018 - Rebase demo branch to master
 
   New master doesn't rely on Json-Server as fake API. It will only have Readonly fake API. It means any new or updated data will be stored to any physical file. All test data will be rolled back after system restart.
 
-- May 2018 -  Create an archived branch json-server
+- May 2018 - Create an archived branch json-server
 
-  This branch was the master which used Json-Server as fake API. Considering the hiccup of setting Json-Server up and maintenance, it will be replaced by fake service ( Readonly fake API). You still can find clone this branch by branch name **json-server**, but it will be no longer updated. It is an archived branch.
+  This branch was the master which used Json-Server as fake API. Considering the hiccup of setting Json-Server up and maintenance, it will be replaced by fake service ( Readonly fake API).

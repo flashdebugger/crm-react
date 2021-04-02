@@ -25,7 +25,7 @@ interface AppNavBarProps {
 const AppNavBar: React.FC<AppNavBarProps> = ({ styles, handleDrawerToggle}) => {
 const handleClick = () => {
     window.open(
-      "https://github.com/harryho/react-crm",
+      "https://github.com/flashdebugger/rcm-react",
       undefined,
       undefined,
       false
